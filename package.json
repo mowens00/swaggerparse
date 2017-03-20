@@ -1,0 +1,23 @@
+{
+  "name": "swaggerparse",
+  "version": "1.0.0",
+  "description": "Node script to parse Swagger file into csv",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowens00/swaggerparse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mowens00/swaggerparse/issues"
+  },
+  "homepage": "https://github.com/mowens00/swaggerparse#readme"
+}
