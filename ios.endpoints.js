@@ -1,0 +1,426 @@
+var data = [{
+    method: "GET",
+    path: "/v1/Applications/me/config"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/UIConfig"
+}, {
+    method: "GET",
+    path: "/v1/Navigation/Mobile"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Theme"
+}, {
+    method: "GET",
+    path: "/v1/Place/{placeId}/Config"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/MobileMenu"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me"
+}, {
+    method: "POST",
+    path: "/v1/Users"
+}, {
+    method: "PUT",
+    path: "/v1/Users/{userId}/Phones/0"
+}, {
+    method: "PUT",
+    path: "/v1/Users/Me/Phones/0"
+}, {
+    method: "GET",
+    path: "/v1/Users/{userId}/PersonalDevices"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/PersonalDevices"
+}, {
+    method: "GET",
+    path: "/v1/Users/{userId}/PersonalDevices/{personalDeviceId}"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/PersonalDevices/{personalDeviceId}"
+}, {
+    method: "POST",
+    path: "/v1/Users/Me/PersonalDevices/Validate"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/PersonalDevices"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/ExplorerConfig"
+}, {
+    method: "POST",
+    path: "/v1/Users/Account"
+}, {
+    method: "POST",
+    path: "/v2/Users/SendVerificationEmail"
+}, {
+    method: "POST",
+    path: "/v1/Users/Password/Forgot"
+}, {
+    method: "POST",
+    path: "/v2/Users/Password/Forgot"
+}, {
+    method: "POST",
+    path: "/v1/Users/Me/Password"
+}, {
+    method: "POST",
+    path: "/v2/Users/Me/Password"
+}, {
+    method: "PUT",
+    path: "/v1/Users/Account"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Subscriptions"
+}, {
+    method: "GET",
+    path: "/v2/Users/Me"
+}, {
+    method: "GET",
+    path: "/v1/Surveys"
+}, {
+    method: "GET",
+    path: "/v1/Subscriptions"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Surveys/{surveyId}"
+}, {
+    method: "POST",
+    path: "/v1/Users/Me/Subscriptions"
+}, {
+    method: "POST",
+    path: "/v1/Users/Me/Surveys/{surveyId}"
+}, {
+    method: "POST",
+    path: "/v2/Users/Me"
+}, {
+    method: "PUT",
+    path: "/v2/Users/Me"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Stays"
+}, {
+    method: "PUT",
+    path: "/v1/Users/Me/Stays"
+}, {
+    method: "GET",
+    path: "/v2/images/thumbnail"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Info"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/places/{placeId}/checkin"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/places/{placeId}/checkout"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/places/{placeId}/stay/{stayId}"
+}, {
+    method: "GET",
+    path: "/v1/Images/MarketingCards"
+}, {
+    method: "GET",
+    path: "/v1/places/{placeId}/beacons"
+}, {
+    method: "GET",
+    path: "/v1/Beacons/{uuid}/Users/Me"
+}, {
+    method: "GET",
+    path: "/v1/Integrations/Buggy/Stops"
+}, {
+    method: "POST",
+    path: "/v1/Integrations/Buggy/Request"
+}, {
+    method: "POST",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart/Items"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart/Items"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart"
+}, {
+    method: "DELETE",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart"
+}, {
+    method: "DELETE",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart"
+}, {
+    method: "DELETE",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart"
+}, {
+    method: "DELETE",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart/Items/{itemId}"
+}, {
+    method: "PUT",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart/Items/{itemId}"
+}, {
+    method: "PUT",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart/Items/{itemId}"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart/Items/{itemId}"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Features/RoomService/Cart/Checkout"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Features/{featureId}/Cart/Checkout"
+}, {
+    method: "POST",
+    path: "/v1/Clicktrack"
+}, {
+    method: "GET",
+    path: "/v2/places/{placeId}/events"
+}, {
+    method: "GET",
+    path: "/v2/places/{placeId}/events/{eventId}"
+}, {
+    method: "GET",
+    path: "/v1/Files"
+}, {
+    method: "GET",
+    path: "/v2/places/{placeId}/eventgroups"
+}, {
+    method: "POST",
+    path: "/v2/places/{placeId}/events/actions/validate"
+}, {
+    method: "GET",
+    path: "/v1/Place/{placeId}/Amenities"
+}, {
+    method: "GET",
+    path: "/v2/Place/{placeId}/Amenities"
+}, {
+    method: "GET",
+    path: "/v2/Place/{placeId}/Amenities"
+}, {
+    method: "GET",
+    path: "/v1/Place/{placeId}/Amenities/{featureId}"
+}, {
+    method: "GET",
+    path: "/v1/Flights"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/HotelAirport"
+}, {
+    method: "GET",
+    path: "/v1/Flights/Airports"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Maps"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Menus"
+}, {
+    method: "GET",
+    path: "/v1/Places/{menuId}/Sections"
+}, {
+    method: "GET",
+    path: "/v1/Menus/Sections/Items/{menuItemId}"
+}, {
+    method: "GET",
+    path: "/v2/Places/Groups"
+}, {
+    method: "GET",
+    path: "/v1/Places/Groups/WithWaitTime"
+}, {
+    method: "GET",
+    path: "/v2/Places/Groups"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Transportation/Valet"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Transportation"
+}, {
+    method: "GET",
+    path: "/v1/Proxce/GetReservations"
+}, {
+    method: "GET",
+    path: "/v1/Proxce/GetReservationsWithResId"
+}, {
+    method: "GET",
+    path: "/v1/Proxce/FBAvailability"
+}, {
+    method: "DELETE",
+    path: "/v1/Proxce/DeleteFBReservation"
+}, {
+    method: "POST",
+    path: "/v2/Proxce/CreateReservation"
+}, {
+    method: "PUT",
+    path: "/v2/Proxce/UpdateReservation"
+}, {
+    method: "GET",
+    path: "/v1/Proxce/GetRoomReservations"
+}, {
+    method: "POST",
+    path: "/v2/Proxce/ConfirmStay"
+}, {
+    method: "POST",
+    path: "/v1/Proxce/RegisterProfile"
+}, {
+    method: "GET",
+    path: "/v2/Places/{placeId}/MobileMore"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/TopSail"
+}, {
+    method: "GET",
+    path: "/v2/Places/{placeId}/Postcards"
+}, {
+    method: "GET",
+    path: "/v2/places/{placeId}/postcards/frames"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Recommendations/Categories"
+}, {
+    method: "GET",
+    path: "/v2/Places/{placeId}/Recommendations/Categories"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Recommendations"
+}, {
+    method: "GET",
+    path: "/v2/Places/{placeId}/Recommendations/Categories/{categoryId}"
+}, {
+    method: "GET",
+    path: "v1/Places/{placeId}/Recommendations/{enterpriseId}"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/NearbyRecommendations"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/FeaturedItems"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Wayfinding/Features/{placemarkId}"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Weather"
+}, {
+    method: "GET",
+    path: "/v1/Weather"
+}, {
+    method: "GET",
+    path: "/v1/Weather/Places"
+}, {
+    method: "GET",
+    path: "/v1/Weather/Places/{placeId}/Historical/{month}"
+}, {
+    method: "GET",
+    path: "/v1/Weather/Historical/{month}"
+}, {
+    method: "GET",
+    path: "/v1/Places"
+}, {
+    method: "GET",
+    path: "/v1/Users/Anonymous/Requests"
+}, {
+    method: "GET",
+    path: "/v1/Anonymous/PersonalDevices/{deviceId}/Requests"
+}, {
+    method: "GET",
+    path: "/v1/Anonymous/PersonalDevices/{deviceId}/Requests/{requestId}"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Requests"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Requests/{requestId}"
+}, {
+    method: "GET",
+    path: "/v1/Users/Anonymous/Requests/{requestId}"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Requests/{requestId}/Actions"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Anonymous/Requests/{requestId}/Actions"
+}, {
+    method: "GET",
+    path: "/v1/Requests/{requestId}/Messages"
+}, {
+    method: "GET",
+    path: "/v2/Requests/{requestId}/Messages"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Anonymous/Messages"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Templates"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Templates/Search"
+}, {
+    method: "GET",
+    path: "/v2/Places/{placeId}/Requests/Templates/Search"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Templates/{templateId}"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Staff"
+}, {
+    method: "GET",
+    path: "/v1/Users/Me/Requests"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Anonymous"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Users"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Welcome"
+}, {
+    method: "GET",
+    path: "/v1/Places/{placeId}/Requests/Groups"
+}, {
+    method: "GET",
+    path: "/v1/Users/{userId}/Requests/{requestId}/Actions/{lastViewedActionId}/LastViewed"
+}, {
+    method: "POST",
+    path: "/v1/Requests/{requestId}/Statuses/Accept"
+}, {
+    method: "POST",
+    path: "/v1/Requests/{requestId}/Statuses/Close"
+}, {
+    method: "POST",
+    path: "/v1/Requests/{requestId}/Statuses/Forward/{toGroupId}"
+}, {
+    method: "GET",
+    path: "/v1/Requests/{requestId}/Followers"
+}, {
+    method: "POST",
+    path: "/v1/Requests/{requestId}/Followers/{addFollowerId}"
+}, {
+    method: "DELETE",
+    path: "/v1/Requests/{requestId}/Followers/{removeFollowerId}"
+}, {
+    method: "POST",
+    path: "/v1/Requests/{requestId}/Relations/{addRelatedId}"
+}, {
+    method: "DELETE",
+    path: "/v1/Requests/{requestId}/Relations/{removeRelatedId}"
+}, {
+    method: "POST",
+    path: "/v1/Users/{userId}/Requests/Approve/Places/{placeId}"
+}, {
+    method: "POST",
+    path: "/v1/Users/{userId}/Requests/Deny/Places/{placeId}"
+}, {
+    method: "POST",
+    path: "/v1/Users/{userId}/Requests/Block/Places/{placeId}"
+}, {
+    method: "PUT",
+    path: "/v1/Requests/{requestId}/Eta"
+}]
+
+exports.data = data;
