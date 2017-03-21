@@ -8,6 +8,7 @@
     "test": "test"
   },
   "dependencies": {
+    "json2csv": "^3.7.3",
     "lodash": "^4.17.4"
   }
 }
