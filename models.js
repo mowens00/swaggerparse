@@ -1,4 +1,4 @@
-var models = [{
+var models = {
     "MonsciergeIDK.AdBoards.Models.AdBoardModel": {
         "type": "object",
         "properties": {
@@ -40,11 +40,11 @@ var models = [{
             "admin_divisions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.AdminDivision.AdminDivisionResourceModel"
+                    "$ref": "MonsciergeAPI.Models.AdminDivision.AdminDivisionResourceModel"
                 }
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.LinkModel"
+                "$ref": "MonsciergeAPI.Models.LinkModel"
             }
         }
     },
@@ -74,7 +74,7 @@ var models = [{
                 "type": "string"
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.AdminDivision.AdminDivisionLinkModel",
+                "$ref": "MonsciergeAPI.Models.AdminDivision.AdminDivisionLinkModel",
                 "readOnly": true
             }
         }
@@ -211,13 +211,13 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Ads.Models.AdImageModel"
+                    "$ref": "MonsciergeIDK.Ads.Models.AdImageModel"
                 }
             },
             "locations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Ads.Models.DeviceAdMapModel"
+                    "$ref": "MonsciergeIDK.Ads.Models.DeviceAdMapModel"
                 }
             },
             "image": {
@@ -293,13 +293,13 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "child_features": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Features.Models.ChildAmenityModel"
+                    "$ref": "MonsciergeIDK.Features.Models.ChildAmenityModel"
                 }
             },
             "contact_desc": {
@@ -311,11 +311,11 @@ var models = [{
             "menus": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.Menu.MenuBaseModel"
+                    "$ref": "MonsciergeIDK.Models.Menu.MenuBaseModel"
                 }
             },
             "review": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ReviewModel"
+                "$ref": "MonsciergeIDK.Models.ReviewModel"
             },
             "placemark": {
                 "type": "string"
@@ -326,22 +326,22 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ScheduleModel"
+                    "$ref": "MonsciergeIDK.Models.ScheduleModel"
                 }
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.AmenityPhoneModel"
+                    "$ref": "MonsciergeIDK.Models.AmenityPhoneModel"
                 }
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeIDK.Locations.Models.LocationModel"
+                "$ref": "MonsciergeIDK.Locations.Models.LocationModel"
             },
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.UriModel"
+                    "$ref": "MonsciergeIDK.Models.UriModel"
                 }
             },
             "is_active": {
@@ -389,7 +389,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "name": {
@@ -429,7 +429,7 @@ var models = [{
             "child_features": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Features.Models.ChildAmenityModel"
+                    "$ref": "MonsciergeIDK.Features.Models.ChildAmenityModel"
                 }
             },
             "description": {
@@ -461,7 +461,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             }
         }
@@ -516,7 +516,7 @@ var models = [{
             "reviews": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ReviewSimpleModel"
+                    "$ref": "MonsciergeIDK.Models.ReviewSimpleModel"
                 }
             }
         }
@@ -704,7 +704,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -736,7 +736,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "name": {
@@ -762,7 +762,7 @@ var models = [{
                 "type": "boolean"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "name": {
                 "type": "string"
@@ -781,7 +781,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             }
         }
@@ -818,7 +818,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "name": {
@@ -841,7 +841,7 @@ var models = [{
             "child_features": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Features.Models.ChildAmenityModel"
+                    "$ref": "MonsciergeIDK.Features.Models.ChildAmenityModel"
                 }
             },
             "contact_desc": {
@@ -853,11 +853,11 @@ var models = [{
             "menus": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.Menu.MenuBaseModel"
+                    "$ref": "MonsciergeIDK.Models.Menu.MenuBaseModel"
                 }
             },
             "review": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ReviewModel"
+                "$ref": "MonsciergeIDK.Models.ReviewModel"
             },
             "placemark": {
                 "type": "string"
@@ -868,22 +868,22 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ScheduleModel"
+                    "$ref": "MonsciergeIDK.Models.ScheduleModel"
                 }
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.AmenityPhoneModel"
+                    "$ref": "MonsciergeIDK.Models.AmenityPhoneModel"
                 }
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeIDK.Locations.Models.LocationModel"
+                "$ref": "MonsciergeIDK.Locations.Models.LocationModel"
             },
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.UriModel"
+                    "$ref": "MonsciergeIDK.Models.UriModel"
                 }
             },
             "is_active": {
@@ -931,7 +931,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "name": {
@@ -955,7 +955,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -977,7 +977,7 @@ var models = [{
                 "type": "string"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "is_top_level": {
                 "type": "boolean"
@@ -1005,11 +1005,11 @@ var models = [{
             "menus": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.MenuBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.MenuBaseModel"
                 }
             },
             "review": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Feedback.ReviewModel"
+                "$ref": "MonsciergeAPI.Models.Feedback.ReviewModel"
             },
             "placemark": {
                 "type": "string"
@@ -1020,28 +1020,28 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.ScheduleModel"
+                    "$ref": "MonsciergeAPI.Models.Base.ScheduleModel"
                 }
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.AmenityPhoneModel"
+                    "$ref": "MonsciergeIDK.Models.AmenityPhoneModel"
                 }
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeIDK.Locations.Models.LocationModel"
+                "$ref": "MonsciergeIDK.Locations.Models.LocationModel"
             },
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "child_features": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Amenity.ChildAmenityModel"
+                    "$ref": "MonsciergeAPI.Models.Amenity.ChildAmenityModel"
                 }
             },
             "is_active": {
@@ -1169,7 +1169,7 @@ var models = [{
             "reviews": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Feedback.ReviewSimpleModel"
+                    "$ref": "MonsciergeAPI.Models.Feedback.ReviewSimpleModel"
                 }
             }
         }
@@ -1250,7 +1250,7 @@ var models = [{
             "child_features": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Amenity.ChildAmenityModel"
+                    "$ref": "MonsciergeAPI.Models.Amenity.ChildAmenityModel"
                 }
             },
             "description": {
@@ -1308,7 +1308,7 @@ var models = [{
         "type": "object",
         "properties": {
             "option": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.Option.RequestTemplateOptionBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.Option.RequestTemplateOptionBaseModel"
             },
             "value_ms": {
                 "format": "int64",
@@ -1346,7 +1346,7 @@ var models = [{
             "choices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.RequestTemplates.Models.RequestOptionChoicesBaseModel"
+                    "$ref": "MonsciergeIDK.RequestTemplates.Models.RequestOptionChoicesBaseModel"
                 }
             },
             "type": {
@@ -1401,7 +1401,7 @@ var models = [{
             "requests": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestSubBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestSubBaseModel"
                 }
             },
             "last_known_request_action_id": {
@@ -1427,7 +1427,7 @@ var models = [{
                 "type": "integer"
             },
             "group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "following": {
                 "description": "Whether or not the user is following the request. <code>True</code> for following, <code>false</code> if not.",
@@ -1440,7 +1440,7 @@ var models = [{
                 "type": "integer"
             },
             "requester_user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "status": {
                 "description": "The status of the request.",
@@ -1455,7 +1455,7 @@ var models = [{
                 "type": "string"
             },
             "template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
             },
             "unread": {
                 "description": "Whether or not the request is unread. <code>True</code> for unread, <code>false</code> if not.",
@@ -1571,13 +1571,13 @@ var models = [{
                 "type": "string"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceBaseModel",
+                "$ref": "MonsciergeAPI.Models.Place.PlaceBaseModel",
                 "description": "The place the template belongs to."
             },
             "stock_responses": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
                 }
             },
             "image_url": {
@@ -1735,7 +1735,7 @@ var models = [{
                 "description": "Application tokens",
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Application.ApplicationTokenModel"
+                    "$ref": "MonsciergeAPI.Models.Application.ApplicationTokenModel"
                 }
             },
             "type": {
@@ -1830,7 +1830,7 @@ var models = [{
                 "type": "integer"
             },
             "user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "range": {
                 "enum": [
@@ -1865,7 +1865,7 @@ var models = [{
                 "type": "string"
             },
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             }
         }
     },
@@ -1931,7 +1931,7 @@ var models = [{
             "brand_slugs": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Brand.BrandSlugModel"
+                    "$ref": "MonsciergeAPI.Models.Brand.BrandSlugModel"
                 }
             },
             "name": {
@@ -2109,7 +2109,7 @@ var models = [{
                 "type": "string"
             },
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "result_code": {
                 "format": "int32",
@@ -2237,11 +2237,11 @@ var models = [{
             "guest_preference": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
                 }
             },
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "result_code": {
                 "format": "int32",
@@ -2320,7 +2320,7 @@ var models = [{
             "rewards": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynReward"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynReward"
                 }
             },
             "result_code": {
@@ -2400,7 +2400,7 @@ var models = [{
             "profile_data": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.SimpleProfileInfo"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.SimpleProfileInfo"
                 }
             },
             "result_code": {
@@ -2428,7 +2428,7 @@ var models = [{
                 "type": "string"
             },
             "state": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.StateProv"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.StateProv"
             },
             "phone": {
                 "type": "string"
@@ -2445,7 +2445,7 @@ var models = [{
             "membership_info": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.SimpleProfileMembershipInfo"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.SimpleProfileMembershipInfo"
                 }
             }
         }
@@ -2514,7 +2514,7 @@ var models = [{
         "type": "object",
         "properties": {
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "returned_rows": {
                 "format": "int32",
@@ -2523,7 +2523,7 @@ var models = [{
             "stay": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynStay"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynStay"
                 }
             },
             "result_code": {
@@ -2584,12 +2584,12 @@ var models = [{
         "type": "object",
         "properties": {
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "guest_preference": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
                 }
             },
             "result_code": {
@@ -2605,7 +2605,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -2622,10 +2622,10 @@ var models = [{
         "type": "object",
         "properties": {
             "guest_profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "guest_preference": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestPreferences"
             },
             "result_code": {
                 "format": "int32",
@@ -2645,7 +2645,7 @@ var models = [{
             "data": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynSubscription"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynSubscription"
                 }
             }
         }
@@ -2674,7 +2674,7 @@ var models = [{
             "survey": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.Survey"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.Survey"
                 }
             },
             "result_code": {
@@ -2721,7 +2721,7 @@ var models = [{
             "data": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynQuestion"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynQuestion"
                 }
             }
         }
@@ -2739,7 +2739,7 @@ var models = [{
             "responses": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynOptions"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynOptions"
                 }
             }
         }
@@ -2858,7 +2858,7 @@ var models = [{
             "property": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.PropertyModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.PropertyModel"
                 }
             },
             "status": {
@@ -2888,10 +2888,10 @@ var models = [{
                 "type": "boolean"
             },
             "room": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Stay.RoomModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Stay.RoomModel"
             },
             "revenue": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.InvoiceModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.InvoiceModel"
             },
             "ids": {
                 "type": "object",
@@ -2908,7 +2908,7 @@ var models = [{
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             },
             "stay_card_image": {
@@ -2943,7 +2943,7 @@ var models = [{
                 "type": "string"
             },
             "room_type": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Stay.RoomTypeModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Stay.RoomTypeModel"
             }
         }
     },
@@ -2951,15 +2951,15 @@ var models = [{
         "type": "object",
         "properties": {
             "total": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
             },
             "current_balance": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
             },
             "charges": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.ChargeModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.ChargeModel"
                 }
             }
         }
@@ -2971,7 +2971,7 @@ var models = [{
                 "type": "string"
             },
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             }
         }
     },
@@ -3005,7 +3005,7 @@ var models = [{
         "type": "object",
         "properties": {
             "charge": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AmountModel"
             },
             "date": {
                 "format": "date-time",
@@ -3047,13 +3047,13 @@ var models = [{
             "addresses": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Locations.Models.LocationModel"
+                    "$ref": "MonsciergeIDK.Locations.Models.LocationModel"
                 }
             },
             "social": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Profile.SocialModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Profile.SocialModel"
                 }
             },
             "remarks": {
@@ -3065,13 +3065,13 @@ var models = [{
             "preferences": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.PreferenceModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.PreferenceModel"
                 }
             },
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             },
             "title": {
@@ -3087,7 +3087,7 @@ var models = [{
                 "type": "string"
             },
             "company": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Profile.CompanyModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Profile.CompanyModel"
             }
         }
     },
@@ -3106,7 +3106,7 @@ var models = [{
                 "type": "string"
             },
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             }
         }
     },
@@ -3119,7 +3119,7 @@ var models = [{
             "addresses": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Locations.Models.LocationModel"
+                    "$ref": "MonsciergeIDK.Locations.Models.LocationModel"
                 }
             },
             "phones": {
@@ -3151,7 +3151,7 @@ var models = [{
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -3171,13 +3171,13 @@ var models = [{
             "questions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Survey.SurveyQuestionModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Survey.SurveyQuestionModel"
                 }
             },
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -3194,16 +3194,16 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Survey.SurveyResponseModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Survey.SurveyResponseModel"
                 }
             },
             "response": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Survey.SurveyResponseModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Survey.SurveyResponseModel"
             },
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -3223,7 +3223,7 @@ var models = [{
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -3232,12 +3232,12 @@ var models = [{
         "type": "object",
         "properties": {
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
+                "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynGuestProfile"
             },
             "stay": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynStay"
+                    "$ref": "MonsciergeIDK.Integrations.Cendyn.Models.Response.CendynStay"
                 }
             }
         }
@@ -3272,7 +3272,7 @@ var models = [{
                 "type": "string"
             },
             "config": {
-                "$ref": "#/definitions/MonsciergeIDK.LivingStage.Models.ChannelConfig"
+                "$ref": "MonsciergeIDK.LivingStage.Models.ChannelConfig"
             }
         }
     },
@@ -3295,10 +3295,10 @@ var models = [{
                 "type": "integer"
             },
             "living_stage": {
-                "$ref": "#/definitions/MonsciergeIDK.LivingStage.Models.LivingStageChannelConfig"
+                "$ref": "MonsciergeIDK.LivingStage.Models.LivingStageChannelConfig"
             },
             "slideshow": {
-                "$ref": "#/definitions/MonsciergeIDK.LivingStage.Models.SlideshowChannelConfig"
+                "$ref": "MonsciergeIDK.LivingStage.Models.SlideshowChannelConfig"
             }
         }
     },
@@ -3335,7 +3335,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                    "$ref": "MonsciergeIDK.Models.ImageModel"
                 }
             }
         }
@@ -3431,7 +3431,7 @@ var models = [{
                 "type": "string"
             },
             "data": {
-                "$ref": "#/definitions/MonsciergeIDK.Analytics.Models.DeviceClickData"
+                "$ref": "MonsciergeIDK.Analytics.Models.DeviceClickData"
             }
         }
     },
@@ -3451,7 +3451,7 @@ var models = [{
             "aggregations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Analytics.Models.DeviceClickAggregation"
+                    "$ref": "MonsciergeIDK.Analytics.Models.DeviceClickAggregation"
                 }
             }
         }
@@ -3529,7 +3529,7 @@ var models = [{
             "aggregations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Analytics.Models.DeviceHistogramAggregation"
+                    "$ref": "MonsciergeIDK.Analytics.Models.DeviceHistogramAggregation"
                 }
             },
             "_record_count": {
@@ -3599,11 +3599,11 @@ var models = [{
             "countries": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Country.CountryResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Country.CountryResourceModel"
                 }
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.LinkModel"
+                "$ref": "MonsciergeAPI.Models.LinkModel"
             }
         }
     },
@@ -3638,7 +3638,7 @@ var models = [{
                 "type": "string"
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Country.CountryLinkModel",
+                "$ref": "MonsciergeAPI.Models.Country.CountryLinkModel",
                 "readOnly": true
             }
         }
@@ -3749,11 +3749,11 @@ var models = [{
             "links": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/System.Object"
+                    "$ref": "System.Object"
                 }
             },
             "data": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceDetailModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceDetailModel"
             }
         }
     },
@@ -3761,16 +3761,16 @@ var models = [{
         "type": "object",
         "properties": {
             "info": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceInfoModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceInfoModel"
             },
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Base.ExternalTranslatableString"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Base.ExternalTranslatableString"
             },
             "is_active": {
                 "type": "boolean"
             },
             "description": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Base.ExternalTranslatableString"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Base.ExternalTranslatableString"
             },
             "fk_phone_number": {
                 "type": "string"
@@ -3796,22 +3796,22 @@ var models = [{
                 "type": "string"
             },
             "location": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceGeoLocationModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceGeoLocationModel"
             },
             "memory": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceUsageModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceUsageModel"
             },
             "storage": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceUsageModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceUsageModel"
             },
             "battery": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceBatteryModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceBatteryModel"
             },
             "locale": {
                 "type": "string"
             },
             "screen_size": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceScreenSizeModel"
+                "$ref": "MonsciergeIDK.Integrations.Microservices.Devices.Models.ExternalDeviceScreenSizeModel"
             },
             "density": {
                 "type": "string"
@@ -4012,7 +4012,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.Device.Models.DeviceModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.Device.Models.DeviceModel]"
                 },
                 "readOnly": true
             }
@@ -4022,7 +4022,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4050,7 +4050,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.SubDevice.Models.SubDeviceModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.SubDevice.Models.SubDeviceModel]"
                 },
                 "readOnly": true
             }
@@ -4060,7 +4060,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4088,7 +4088,7 @@ var models = [{
             "event_groups": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventGroups.EventGroupResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventGroups.EventGroupResourceModel"
                 }
             },
             "self_url": {
@@ -4132,7 +4132,7 @@ var models = [{
             "event_locations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventLocations.EventLocationResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventLocations.EventLocationResourceModel"
                 }
             },
             "self_url": {
@@ -4170,7 +4170,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Images.ImageResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Images.ImageResourceModel"
                 }
             },
             "self_url": {
@@ -4245,7 +4245,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionAttachmentModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionAttachmentModel]"
                 },
                 "readOnly": true
             }
@@ -4255,7 +4255,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4312,7 +4312,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionImageModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionImageModel]"
                 },
                 "readOnly": true
             }
@@ -4322,7 +4322,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4358,7 +4358,7 @@ var models = [{
                 "type": "integer"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                "$ref": "MonsciergeIDK.Models.ImageModel"
             }
         }
     },
@@ -4368,7 +4368,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionSponsorshipModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionSponsorshipModel]"
                 },
                 "readOnly": true
             }
@@ -4378,7 +4378,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4407,19 +4407,19 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventSectionImageModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventSectionImageModel"
                 }
             },
             "attachments": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventSectionAttachmentModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventSectionAttachmentModel"
                 }
             },
             "sponsorships": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventSectionSponsorshipModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventSectionSponsorshipModel"
                 }
             },
             "id": {
@@ -4441,7 +4441,7 @@ var models = [{
             "operations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionModel]"
+                    "$ref": "Marvin.JsonPatch.Operations.Operation[MonsciergeIDK.MeetingsAndEvents.Models.EventSectionModel]"
                 },
                 "readOnly": true
             }
@@ -4451,7 +4451,7 @@ var models = [{
         "type": "object",
         "properties": {
             "value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "path": {
                 "type": "string"
@@ -4471,7 +4471,7 @@ var models = [{
             "events": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventDetails.EventResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventDetails.EventResourceModel"
                 }
             },
             "self_url": {
@@ -4628,18 +4628,18 @@ var models = [{
                 "type": "string"
             },
             "map_image": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Images.ImageResourceModel"
+                "$ref": "MonsciergeAPI.Models.Images.ImageResourceModel"
             },
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Images.ImageResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Images.ImageResourceModel"
                 }
             },
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventSections.EventSectionResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventSections.EventSectionResourceModel"
                 }
             },
             "self_url": {
@@ -4667,19 +4667,19 @@ var models = [{
             "attachments": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.EventSections.EventSectionAttachmentResourceModel"
+                    "$ref": "MonsciergeAPI.Models.EventSections.EventSectionAttachmentResourceModel"
                 }
             },
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Images.ImageResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Images.ImageResourceModel"
                 }
             },
             "sponsorships": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventSections.EventSectionSponsorshipResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventSections.EventSectionSponsorshipResourceModel"
                 }
             }
         }
@@ -4722,7 +4722,7 @@ var models = [{
                 "type": "integer"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Images.ImageResourceModel"
+                "$ref": "MonsciergeAPI.Models.Images.ImageResourceModel"
             }
         }
     },
@@ -4751,7 +4751,7 @@ var models = [{
             "items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Carts.Models.CartItemModel"
+                    "$ref": "MonsciergeIDK.Carts.Models.CartItemModel"
                 }
             },
             "place_name": {
@@ -4778,7 +4778,7 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.Request.RequestTemplateOption"
+                    "$ref": "MonsciergeIDK.Models.Request.RequestTemplateOption"
                 }
             },
             "state": {
@@ -4825,7 +4825,7 @@ var models = [{
             "modifiers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Carts.Models.CartItemModifierModel"
+                    "$ref": "MonsciergeIDK.Carts.Models.CartItemModifierModel"
                 }
             },
             "additional_info": {
@@ -4882,7 +4882,7 @@ var models = [{
             "additional_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Carts.Models.CartItemModel"
+                    "$ref": "MonsciergeIDK.Carts.Models.CartItemModel"
                 }
             },
             "parent_id": {
@@ -4972,7 +4972,7 @@ var models = [{
         "type": "object",
         "properties": {
             "option": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.Request.RequestTemplateOptionBase"
+                "$ref": "MonsciergeIDK.Models.Request.RequestTemplateOptionBase"
             },
             "value_ms": {
                 "format": "int64",
@@ -5075,7 +5075,7 @@ var models = [{
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -5084,7 +5084,7 @@ var models = [{
         "type": "object",
         "properties": {
             "profile": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfile"
+                "$ref": "MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfile"
             }
         }
     },
@@ -5092,7 +5092,7 @@ var models = [{
         "type": "object",
         "properties": {
             "addresses": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfileAddressGroup"
+                "$ref": "MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfileAddressGroup"
             }
         }
     },
@@ -5100,7 +5100,7 @@ var models = [{
         "type": "object",
         "properties": {
             "primary": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfileAddress"
+                "$ref": "MonsciergeIDK.Integrations.HeBS.Loyalty.HeBSLoyaltyProfileAddress"
             }
         }
     },
@@ -5133,7 +5133,7 @@ var models = [{
             "subscriptions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.HeBS.Loyalty.Models.HeBSLoyaltySubscription"
+                    "$ref": "MonsciergeIDK.Integrations.HeBS.Loyalty.Models.HeBSLoyaltySubscription"
                 }
             }
         }
@@ -5152,7 +5152,7 @@ var models = [{
             "top_images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MarketingCards.Models.TopImage"
+                    "$ref": "MonsciergeIDK.MarketingCards.Models.TopImage"
                 }
             }
         }
@@ -5216,7 +5216,7 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Configs.Models.ConfigOption"
+                    "$ref": "MonsciergeIDK.Configs.Models.ConfigOption"
                 }
             },
             "name": {
@@ -5249,7 +5249,7 @@ var models = [{
                 "type": "boolean"
             },
             "default_value": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "name": {
                 "type": "string"
@@ -5418,16 +5418,16 @@ var models = [{
                 "type": "integer"
             },
             "cab_request_template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
             },
             "limo_request_template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
             },
             "shuttle_request_template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
             },
             "valet_request": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateModel"
             }
         }
     },
@@ -5444,7 +5444,7 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.Option.RequestTemplateOptionModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.Option.RequestTemplateOptionModel"
                 }
             },
             "ordinal": {
@@ -5454,7 +5454,7 @@ var models = [{
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "validation": {
@@ -5466,7 +5466,7 @@ var models = [{
                 "type": "integer"
             },
             "category": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
             },
             "staff": {
                 "description": "Whether or not the template is for staff users only. <code>True</code> for staff only, <code>false</code> if not.",
@@ -5478,7 +5478,7 @@ var models = [{
             "sms_numbers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestSMSNumber"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestSMSNumber"
                 }
             },
             "is_active": {
@@ -5497,13 +5497,13 @@ var models = [{
                 "type": "string"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceBaseModel",
+                "$ref": "MonsciergeAPI.Models.Place.PlaceBaseModel",
                 "description": "The place the template belongs to."
             },
             "stock_responses": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
                 }
             },
             "image_url": {
@@ -5582,7 +5582,7 @@ var models = [{
             "choices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.RequestTemplates.Models.RequestOptionChoicesBaseModel"
+                    "$ref": "MonsciergeIDK.RequestTemplates.Models.RequestOptionChoicesBaseModel"
                 }
             },
             "type": {
@@ -5662,16 +5662,16 @@ var models = [{
                 "type": "boolean"
             },
             "cab": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "limo": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "shuttle": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "valet": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "name": {
                 "type": "string"
@@ -5735,16 +5735,16 @@ var models = [{
                 "type": "boolean"
             },
             "cab": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "limo": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "shuttle": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             },
             "valet": {
-                "$ref": "#/definitions/MonsciergeIDK.Transportation.Models.TransportationBaseModel"
+                "$ref": "MonsciergeIDK.Transportation.Models.TransportationBaseModel"
             }
         }
     },
@@ -5813,10 +5813,10 @@ var models = [{
                 "type": "string"
             },
             "performer": {
-                "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventHostModel"
+                "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventHostModel"
             },
             "stage": {
-                "$ref": "#/definitions/MonsciergeIDK.LivingStage.Models.Stage.StageListModel"
+                "$ref": "MonsciergeIDK.LivingStage.Models.Stage.StageListModel"
             },
             "featured": {
                 "type": "boolean"
@@ -5857,7 +5857,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "url": {
@@ -5880,19 +5880,19 @@ var models = [{
             "events": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventListModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventListModel"
                 }
             },
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                    "$ref": "MonsciergeIDK.Models.ImageModel"
                 }
             },
             "links": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventHostLinkMapModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventHostLinkMapModel"
                 }
             }
         }
@@ -5946,7 +5946,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             }
         }
@@ -6018,7 +6018,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                    "$ref": "MonsciergeIDK.Models.ImageListModel"
                 }
             },
             "url": {
@@ -6045,19 +6045,19 @@ var models = [{
             "events": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventListModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventListModel"
                 }
             },
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                    "$ref": "MonsciergeIDK.Models.ImageModel"
                 }
             },
             "links": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventHostLinkMapModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventHostLinkMapModel"
                 }
             }
         }
@@ -6098,7 +6098,7 @@ var models = [{
                 "type": "string"
             },
             "hours": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "address": {
                 "type": "string"
@@ -6118,7 +6118,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                    "$ref": "MonsciergeIDK.Models.ImageModel"
                 }
             },
             "place_id": {
@@ -6150,7 +6150,7 @@ var models = [{
             "featured_performances": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.PerformanceListModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.PerformanceListModel"
                 }
             }
         }
@@ -6162,7 +6162,7 @@ var models = [{
             "locations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Location.LocationResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Location.LocationResourceModel"
                 }
             },
             "self_url": {
@@ -6280,7 +6280,7 @@ var models = [{
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuSectionListModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuSectionListModel"
                 }
             },
             "request_template_id": {
@@ -6326,13 +6326,13 @@ var models = [{
             "menu_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuListItemModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuListItemModel"
                 }
             },
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuSectionListModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuSectionListModel"
                 }
             }
         }
@@ -6481,31 +6481,31 @@ var models = [{
             "characteristics": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.CharacteristicModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.CharacteristicModel"
                 }
             },
             "modifiers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuItemModifierModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuItemModifierModel"
                 }
             },
             "pairings": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuListItemModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuListItemModel"
                 }
             },
             "prices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuItemPriceModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuItemPriceModel"
                 }
             },
             "upsell_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuListItemModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuListItemModel"
                 }
             },
             "menu_section_id": {
@@ -6563,7 +6563,7 @@ var models = [{
             "possible_values": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuItemModifierValueModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuItemModifierValueModel"
                 }
             }
         }
@@ -6631,31 +6631,31 @@ var models = [{
             "characteristics": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemCharacteristicModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemCharacteristicModel"
                 }
             },
             "desc": {
                 "type": "string"
             },
             "nutrition": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.NutritionModel"
+                "$ref": "MonsciergeAPI.Models.Menu.Item.NutritionModel"
             },
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemOptionModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemOptionModel"
                 }
             },
             "pairings": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemBaseModel"
                 }
             },
             "prices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemPriceModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemPriceModel"
                 }
             },
             "image_urls": {
@@ -6775,7 +6775,7 @@ var models = [{
             "prices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemPriceModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemPriceModel"
                 }
             }
         }
@@ -6852,7 +6852,7 @@ var models = [{
             "menu_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuListItemModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuListItemModel"
                 }
             },
             "ordinal": {
@@ -6866,7 +6866,7 @@ var models = [{
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuSectionModel"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuSectionModel"
                 }
             }
         }
@@ -6881,7 +6881,7 @@ var models = [{
             "links": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MobileMenu.Models.MobileHomeScreenLinkModel"
+                    "$ref": "MonsciergeIDK.MobileMenu.Models.MobileHomeScreenLinkModel"
                 }
             }
         }
@@ -7093,16 +7093,16 @@ var models = [{
                 "type": "string"
             },
             "condition": {
-                "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavConditionModel"
+                "$ref": "MonsciergeIDK.Navigation.Models.NavConditionModel"
             },
             "sub_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavItemPlatformModel"
+                    "$ref": "MonsciergeIDK.Navigation.Models.NavItemPlatformModel"
                 }
             },
             "theme": {
-                "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavThemePlatformModel"
+                "$ref": "MonsciergeIDK.Navigation.Models.NavThemePlatformModel"
             }
         }
     },
@@ -7163,7 +7163,7 @@ var models = [{
             "navigation_models": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavItemModel"
+                    "$ref": "MonsciergeIDK.Navigation.Models.NavItemModel"
                 }
             }
         }
@@ -7228,18 +7228,18 @@ var models = [{
                 "type": "string"
             },
             "condition": {
-                "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavConditionModel"
+                "$ref": "MonsciergeIDK.Navigation.Models.NavConditionModel"
             },
             "sub_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavItemModel"
+                    "$ref": "MonsciergeIDK.Navigation.Models.NavItemModel"
                 }
             },
             "theme": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Navigation.Models.NavThemeModel"
+                    "$ref": "MonsciergeIDK.Navigation.Models.NavThemeModel"
                 }
             }
         }
@@ -7277,7 +7277,7 @@ var models = [{
             "outlet_plugs": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTOutletPlug"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTOutletPlug"
                 }
             },
             "type": {
@@ -7374,7 +7374,7 @@ var models = [{
                 "type": "string"
             },
             "stay": {
-                "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Stay.RoomStayModel"
+                "$ref": "MonsciergeIDK.Integrations.Base.Models.Stay.RoomStayModel"
             },
             "request_id": {
                 "type": "string"
@@ -7385,7 +7385,7 @@ var models = [{
             "additional_info": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -7438,7 +7438,7 @@ var models = [{
         "type": "object",
         "properties": {
             "manufacturer": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.PersonalDevice.PersonalDeviceManufacturerModel"
+                "$ref": "MonsciergeAPI.Models.PersonalDevice.PersonalDeviceManufacturerModel"
             },
             "name": {
                 "description": "The name of the device.",
@@ -7553,7 +7553,7 @@ var models = [{
                 "type": "boolean"
             },
             "capabilities": {
-                "$ref": "#/definitions/Twilio.Capabilities"
+                "$ref": "Twilio.Capabilities"
             },
             "uri": {
                 "type": "string"
@@ -7637,7 +7637,7 @@ var models = [{
                 "type": "boolean"
             },
             "capabilities": {
-                "$ref": "#/definitions/Twilio.Capabilities"
+                "$ref": "Twilio.Capabilities"
             },
             "date_created": {
                 "format": "date-time",
@@ -7838,7 +7838,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             }
         }
@@ -7887,13 +7887,13 @@ var models = [{
             "last24_hours_request_types": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestTypeInfoModel"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestTypeInfoModel"
                 }
             },
             "todays_hourly_request_counts": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Analytic.HourlyRequestCountModel"
+                    "$ref": "MonsciergeAPI.Models.Analytic.HourlyRequestCountModel"
                 }
             }
         }
@@ -7936,13 +7936,13 @@ var models = [{
             "combined_click_counts": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Analytic.CombinedClickCountModel"
+                    "$ref": "MonsciergeAPI.Models.Analytic.CombinedClickCountModel"
                 }
             },
             "popular_content_click_counts": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Analytic.PopularContentClickModel"
+                    "$ref": "MonsciergeAPI.Models.Analytic.PopularContentClickModel"
                 }
             }
         }
@@ -8063,13 +8063,13 @@ var models = [{
             "beacons": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Beacons.Models.BeaconClientModel"
+                    "$ref": "MonsciergeIDK.Beacons.Models.BeaconClientModel"
                 }
             },
             "slots": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Beacons.Models.BeaconCampaignSlotModel"
+                    "$ref": "MonsciergeIDK.Beacons.Models.BeaconCampaignSlotModel"
                 }
             },
             "id": {
@@ -8188,13 +8188,13 @@ var models = [{
             "recurrence_rules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/System.Collections.Generic.KeyValuePair[System.String,System.String]"
+                    "$ref": "System.Collections.Generic.KeyValuePair[System.String,System.String]"
                 }
             },
             "actions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Beacons.Models.BeaconCampaignSlotActionModel"
+                    "$ref": "MonsciergeIDK.Beacons.Models.BeaconCampaignSlotActionModel"
                 }
             }
         }
@@ -8344,7 +8344,7 @@ var models = [{
                 "type": "string"
             },
             "user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -8396,7 +8396,7 @@ var models = [{
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventSectionModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventSectionModel"
                 }
             },
             "group_id": {
@@ -8453,7 +8453,7 @@ var models = [{
             "attachments": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventAttachmentModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventAttachmentModel"
                 }
             },
             "desc": {
@@ -8477,7 +8477,7 @@ var models = [{
             "sponsorships": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventSponsorshipModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventSponsorshipModel"
                 }
             },
             "summary_visible": {
@@ -8487,7 +8487,7 @@ var models = [{
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             }
         }
@@ -8516,7 +8516,7 @@ var models = [{
                 "type": "string"
             },
             "uri": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel",
+                "$ref": "MonsciergeAPI.Models.Base.UriModel",
                 "description": "The URL to the sponsorship.",
                 "default": "http://monscierge.com"
             }
@@ -8572,7 +8572,7 @@ var models = [{
             "events": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Event.EventBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Event.EventBaseModel"
                 }
             },
             "name": {
@@ -8680,7 +8680,7 @@ var models = [{
             "items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.PointOfSale.CartItemModel"
+                    "$ref": "MonsciergeAPI.Models.PointOfSale.CartItemModel"
                 }
             },
             "menu_id": {
@@ -8707,7 +8707,7 @@ var models = [{
             "modifiers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.PointOfSale.CartItemModifierModel"
+                    "$ref": "MonsciergeAPI.Models.PointOfSale.CartItemModifierModel"
                 }
             }
         }
@@ -8731,7 +8731,7 @@ var models = [{
         "type": "object",
         "properties": {
             "check_header": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.PointOfSale.CheckModel"
+                "$ref": "MonsciergeAPI.Models.PointOfSale.CheckModel"
             },
             "cc_auth_code": {
                 "type": "string"
@@ -8799,7 +8799,7 @@ var models = [{
                 "type": "integer"
             },
             "guest_info": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.PointOfSale.UserModel"
+                "$ref": "MonsciergeAPI.Models.PointOfSale.UserModel"
             },
             "guid": {
                 "type": "string"
@@ -8896,13 +8896,13 @@ var models = [{
             "callbacks": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Message.Sms.SmsJobCallbackModel"
+                    "$ref": "MonsciergeAPI.Models.Message.Sms.SmsJobCallbackModel"
                 }
             },
             "tasks": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Message.Sms.SmsTaskModel"
+                    "$ref": "MonsciergeAPI.Models.Message.Sms.SmsTaskModel"
                 }
             },
             "status": {
@@ -8930,7 +8930,7 @@ var models = [{
                 "type": "integer"
             },
             "created_by": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -9104,11 +9104,11 @@ var models = [{
             "enterprises": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Enterprise.EnterpriseListModel"
+                    "$ref": "MonsciergeAPI.Models.Enterprise.EnterpriseListModel"
                 }
             },
             "paging": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.PagingResultsModel"
+                "$ref": "MonsciergeAPI.Models.Base.PagingResultsModel"
             }
         }
     },
@@ -9117,7 +9117,7 @@ var models = [{
         "type": "object",
         "properties": {
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "tip_count": {
                 "format": "int32",
@@ -9151,7 +9151,7 @@ var models = [{
                 "type": "integer"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "enterprise_id": {
                 "format": "int32",
@@ -9173,7 +9173,7 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.ScheduleModel"
+                    "$ref": "MonsciergeAPI.Models.Base.ScheduleModel"
                 }
             },
             "tags": {
@@ -9404,7 +9404,7 @@ var models = [{
                 "type": "integer"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             }
         }
     },
@@ -9413,7 +9413,7 @@ var models = [{
         "type": "object",
         "properties": {
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "bing_id": {
                 "type": "string"
@@ -9433,7 +9433,7 @@ var models = [{
             "feedbacks": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Feedback.FeedbackModel"
+                    "$ref": "MonsciergeAPI.Models.Feedback.FeedbackModel"
                 }
             },
             "google_place_id": {
@@ -9484,7 +9484,7 @@ var models = [{
             "menus": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Menu.MenuBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Menu.MenuBaseModel"
                 }
             },
             "open_table_restaurant_id": {
@@ -9500,7 +9500,7 @@ var models = [{
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "phone_iso_country_code": {
@@ -9533,13 +9533,13 @@ var models = [{
             "tips": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.InsiderTips.InsiderTipModel"
+                    "$ref": "MonsciergeAPI.Models.InsiderTips.InsiderTipModel"
                 }
             },
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "wifi_desc": {
@@ -9551,7 +9551,7 @@ var models = [{
                 "type": "integer"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "enterprise_id": {
                 "format": "int32",
@@ -9573,7 +9573,7 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.ScheduleModel"
+                    "$ref": "MonsciergeAPI.Models.Base.ScheduleModel"
                 }
             },
             "tags": {
@@ -9618,7 +9618,7 @@ var models = [{
                 "type": "string"
             },
             "user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -9708,13 +9708,13 @@ var models = [{
         "type": "object",
         "properties": {
             "amenity": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Amenity.AmenityBaseModel"
+                "$ref": "MonsciergeAPI.Models.Amenity.AmenityBaseModel"
             },
             "enterprise": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Enterprise.EnterpriseBaseModel"
+                "$ref": "MonsciergeAPI.Models.Enterprise.EnterpriseBaseModel"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceSearchBaseModel"
+                "$ref": "MonsciergeAPI.Models.Place.PlaceSearchBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -9780,7 +9780,7 @@ var models = [{
                 "type": "integer"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "enterprise_id": {
                 "format": "int32",
@@ -9802,7 +9802,7 @@ var models = [{
             "schedules": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.ScheduleModel"
+                    "$ref": "MonsciergeAPI.Models.Base.ScheduleModel"
                 }
             },
             "tags": {
@@ -9835,15 +9835,15 @@ var models = [{
         "type": "object",
         "properties": {
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "description": {
@@ -9909,30 +9909,30 @@ var models = [{
                 "readOnly": true
             },
             "template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
             },
             "category": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
             },
             "requester": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel",
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel",
                 "readOnly": true
             },
             "room_number": {
                 "type": "string"
             },
             "closed_by": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel",
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel",
                 "readOnly": true
             },
             "assignees": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                    "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
                 }
             },
             "assigned_group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "status": {
                 "enum": [
@@ -10080,7 +10080,7 @@ var models = [{
             "templates": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
                 }
             },
             "name": {
@@ -10118,7 +10118,7 @@ var models = [{
             "users": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupUserModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupUserModel"
                 }
             },
             "name": {
@@ -10450,7 +10450,7 @@ var models = [{
         "type": "object",
         "properties": {
             "category": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Category.RequestCategoryBaseModel"
             },
             "staff": {
                 "description": "Whether or not the template is for staff users only. <code>True</code> for staff only, <code>false</code> if not.",
@@ -10462,7 +10462,7 @@ var models = [{
             "sms_numbers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestSMSNumber"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestSMSNumber"
                 }
             },
             "is_active": {
@@ -10481,13 +10481,13 @@ var models = [{
                 "type": "string"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceBaseModel",
+                "$ref": "MonsciergeAPI.Models.Place.PlaceBaseModel",
                 "description": "The place the template belongs to."
             },
             "stock_responses": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.StockResponse.RequestTemplateStockResponseBaseModel"
                 }
             },
             "image_url": {
@@ -10523,7 +10523,7 @@ var models = [{
             "results": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.Request.RequestTemplateSearchListModel"
+                    "$ref": "MonsciergeIDK.Models.Request.RequestTemplateSearchListModel"
                 }
             },
             "count": {
@@ -10587,7 +10587,7 @@ var models = [{
             "results": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Requests.Models.RequestTemplateSearchModel"
+                    "$ref": "MonsciergeIDK.Requests.Models.RequestTemplateSearchModel"
                 }
             }
         }
@@ -10662,7 +10662,7 @@ var models = [{
             "templates": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.ViewModels.RequestTemplateCategorySortingModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Template.ViewModels.RequestTemplateCategorySortingModel"
                 },
                 "readOnly": true
             }
@@ -10708,13 +10708,13 @@ var models = [{
             "emails": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.EmailModel"
+                    "$ref": "MonsciergeAPI.Models.Base.EmailModel"
                 }
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "room": {
@@ -10932,7 +10932,7 @@ var models = [{
                 "type": "string"
             },
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "ordinal": {
                 "format": "int32",
@@ -10954,7 +10954,7 @@ var models = [{
                 "type": "boolean"
             },
             "welcome_message": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             }
         }
     },
@@ -10982,7 +10982,7 @@ var models = [{
         "type": "object",
         "properties": {
             "description": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "ref_id": {
                 "type": "string"
@@ -10992,18 +10992,18 @@ var models = [{
                 "type": "integer"
             },
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuListItemModelETL"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuListItemModelETL"
                 }
             },
             "sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuSectionModelETL"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuSectionModelETL"
                 }
             }
         }
@@ -11012,7 +11012,7 @@ var models = [{
         "type": "object",
         "properties": {
             "description": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "images": {
                 "type": "array",
@@ -11021,7 +11021,7 @@ var models = [{
                 }
             },
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "ordinal": {
                 "format": "int32",
@@ -11033,7 +11033,7 @@ var models = [{
             "nutrition": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuNutritionETL"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuNutritionETL"
                 }
             },
             "allergies": {
@@ -11049,12 +11049,12 @@ var models = [{
                 }
             },
             "price": {
-                "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuPriceETL"
+                "$ref": "MonsciergeIDK.Menus.Models.MenuPriceETL"
             },
             "modifiers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuModiferETL"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuModiferETL"
                 }
             }
         }
@@ -11094,10 +11094,10 @@ var models = [{
         "type": "object",
         "properties": {
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "description": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "value": {
                 "format": "double",
@@ -11109,7 +11109,7 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Menus.Models.MenuModifierOptionETL"
+                    "$ref": "MonsciergeIDK.Menus.Models.MenuModifierOptionETL"
                 }
             }
         }
@@ -11118,10 +11118,10 @@ var models = [{
         "type": "object",
         "properties": {
             "name": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "description": {
-                "$ref": "#/definitions/MonsciergeIDK.DataTypes.LocalizableString"
+                "$ref": "MonsciergeIDK.DataTypes.LocalizableString"
             },
             "value": {
                 "format": "double",
@@ -11148,21 +11148,21 @@ var models = [{
                 "type": "string"
             },
             "brand": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Brand.BrandBaseModel"
+                "$ref": "MonsciergeAPI.Models.Brand.BrandBaseModel"
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "links": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "default_image": {
@@ -11187,10 +11187,10 @@ var models = [{
                 "type": "number"
             },
             "time_zone_model": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.TimeZoneModel"
+                "$ref": "MonsciergeAPI.Models.Place.TimeZoneModel"
             },
             "operating_hours": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "latitude": {
                 "format": "double",
@@ -11230,22 +11230,22 @@ var models = [{
         "type": "object",
         "properties": {
             "amenity": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Amenity.AmenityModel"
+                "$ref": "MonsciergeAPI.Models.Amenity.AmenityModel"
             },
             "enterprise": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Enterprise.EnterpriseModel"
+                "$ref": "MonsciergeAPI.Models.Enterprise.EnterpriseModel"
             },
             "id": {
                 "format": "int32",
                 "type": "integer"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceModel"
+                "$ref": "MonsciergeAPI.Models.Place.PlaceModel"
             },
             "geofence": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.Common.LatLng"
+                    "$ref": "MonsciergeIDK.Models.Common.LatLng"
                 }
             }
         }
@@ -11296,7 +11296,7 @@ var models = [{
             "emails": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.EmailModel"
+                    "$ref": "MonsciergeAPI.Models.Base.EmailModel"
                 }
             },
             "enable_amenities": {
@@ -11468,7 +11468,7 @@ var models = [{
                 "type": "string"
             },
             "primary_brand": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Brand.BrandBaseModel"
+                "$ref": "MonsciergeAPI.Models.Brand.BrandBaseModel"
             },
             "radius": {
                 "format": "int32",
@@ -11524,7 +11524,7 @@ var models = [{
                 "type": "string"
             },
             "airport": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Flight.AirportBaseModel"
+                "$ref": "MonsciergeAPI.Models.Flight.AirportBaseModel"
             },
             "cab_request_template_id": {
                 "format": "int32",
@@ -11571,7 +11571,7 @@ var models = [{
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "valet_request_template_id": {
@@ -11579,15 +11579,15 @@ var models = [{
                 "type": "integer"
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "description": {
@@ -11631,7 +11631,7 @@ var models = [{
                 "type": "number"
             },
             "reference": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.Common.LatLng"
+                "$ref": "MonsciergeIDK.Models.Common.LatLng"
             }
         }
     },
@@ -11688,7 +11688,7 @@ var models = [{
             "layouts": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceLayoutModel"
+                    "$ref": "MonsciergeAPI.Models.Place.PlaceLayoutModel"
                 }
             },
             "limo_enabled": {
@@ -11722,7 +11722,7 @@ var models = [{
                 "type": "boolean"
             },
             "time_zone_model": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.TimeZoneModel"
+                "$ref": "MonsciergeAPI.Models.Place.TimeZoneModel"
             },
             "transportation_visible": {
                 "type": "boolean"
@@ -11737,7 +11737,7 @@ var models = [{
                 "type": "boolean"
             },
             "airport": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Flight.AirportBaseModel"
+                "$ref": "MonsciergeAPI.Models.Flight.AirportBaseModel"
             },
             "cab_request_template_id": {
                 "format": "int32",
@@ -11784,7 +11784,7 @@ var models = [{
             "uris": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.UriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.UriModel"
                 }
             },
             "valet_request_template_id": {
@@ -11792,15 +11792,15 @@ var models = [{
                 "type": "integer"
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "description": {
@@ -11837,13 +11837,13 @@ var models = [{
         "type": "object",
         "properties": {
             "amenity": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Amenity.AmenityBaseModel"
+                "$ref": "MonsciergeAPI.Models.Amenity.AmenityBaseModel"
             },
             "desc": {
                 "type": "string"
             },
             "request_template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
             },
             "type": {
                 "enum": [
@@ -11892,13 +11892,13 @@ var models = [{
             "place_featured_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceFeaturedItemModel"
+                    "$ref": "MonsciergeAPI.Models.Place.PlaceFeaturedItemModel"
                 }
             },
             "place_explorer_items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceExplorerItemModel"
+                    "$ref": "MonsciergeAPI.Models.Place.PlaceExplorerItemModel"
                 }
             },
             "id": {
@@ -12001,13 +12001,13 @@ var models = [{
             "reach_groups": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ReachGroup.ReachGroupBaseModel"
+                    "$ref": "MonsciergeIDK.Models.ReachGroup.ReachGroupBaseModel"
                 }
             },
             "hotels": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.HotelSearchModel"
+                    "$ref": "MonsciergeIDK.Models.HotelSearchModel"
                 }
             }
         }
@@ -12111,7 +12111,7 @@ var models = [{
                 "type": "number"
             },
             "operating_hours": {
-                "$ref": "#/definitions/System.Object"
+                "$ref": "System.Object"
             },
             "brand_id": {
                 "format": "int32",
@@ -12217,11 +12217,11 @@ var models = [{
             "postcards": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Postcard.PostcardResourceModel"
+                    "$ref": "MonsciergeAPI.Models.Postcard.PostcardResourceModel"
                 }
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.LinkModel"
+                "$ref": "MonsciergeAPI.Models.LinkModel"
             }
         }
     },
@@ -12252,7 +12252,7 @@ var models = [{
                 "type": "string"
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.SelfLinkModel"
+                "$ref": "MonsciergeAPI.Models.SelfLinkModel"
             }
         }
     },
@@ -12350,7 +12350,7 @@ var models = [{
                 "type": "integer"
             },
             "scene": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Promo.SceneModel"
+                "$ref": "MonsciergeAPI.Models.Promo.SceneModel"
             },
             "id": {
                 "format": "int32",
@@ -12369,18 +12369,18 @@ var models = [{
         "type": "object",
         "properties": {
             "layout": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Promo.PromoLayoutModel"
+                "$ref": "MonsciergeAPI.Models.Promo.PromoLayoutModel"
             },
             "scene_sections": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.SceneSectionModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.SceneSectionModel"
                 }
             },
             "permission_tags": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.PermissionTagModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.PermissionTagModel"
                 }
             },
             "name": {
@@ -12503,12 +12503,12 @@ var models = [{
         "type": "object",
         "properties": {
             "scene": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Promo.SceneModel"
+                "$ref": "MonsciergeAPI.Models.Promo.SceneModel"
             },
             "exceptions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.ExceptionModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.ExceptionModel"
                 }
             },
             "welcome_message_background_image": {
@@ -12524,7 +12524,7 @@ var models = [{
             "permission_tags": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.PermissionTagModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.PermissionTagModel"
                 }
             },
             "orientation": {
@@ -12566,25 +12566,25 @@ var models = [{
             "displays": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.PromoDisplayBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.PromoDisplayBaseModel"
                 }
             },
             "permission_tags": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Promo.PermissionTagModel"
+                    "$ref": "MonsciergeAPI.Models.Promo.PermissionTagModel"
                 }
             },
             "address": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.AddressModel"
+                "$ref": "MonsciergeAPI.Models.Base.AddressModel"
             },
             "geocode": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Base.GeocodeModel"
+                "$ref": "MonsciergeAPI.Models.Base.GeocodeModel"
             },
             "phones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.PhoneModel"
+                    "$ref": "MonsciergeAPI.Models.Base.PhoneModel"
                 }
             },
             "description": {
@@ -12662,7 +12662,7 @@ var models = [{
                 "type": "integer"
             },
             "campaign": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Promo.CampaignModel"
+                "$ref": "MonsciergeAPI.Models.Promo.CampaignModel"
             },
             "name": {
                 "description": "The name of the display.",
@@ -12854,7 +12854,7 @@ var models = [{
             "items": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.ReleaseNote.ReleaseNoteItemModel"
+                    "$ref": "MonsciergeAPI.Models.ReleaseNote.ReleaseNoteItemModel"
                 }
             },
             "short_desc": {
@@ -12964,7 +12964,7 @@ var models = [{
             "devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTDevice"
                 }
             },
             "additional_info": {
@@ -13013,31 +13013,31 @@ var models = [{
             "devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTDevice"
                 }
             },
             "curtain_devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTCurtainDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTCurtainDevice"
                 }
             },
             "outlet_devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTOutletDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTOutletDevice"
                 }
             },
             "switch_devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTSwitchDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTSwitchDevice"
                 }
             },
             "thermostat_devices": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.IoT.Models.IoTThermostatDevice"
+                    "$ref": "MonsciergeIDK.IoT.Models.IoTThermostatDevice"
                 }
             },
             "additional_info": {
@@ -13260,7 +13260,7 @@ var models = [{
             "dependent_products": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Product.ProductBaseModel"
+                    "$ref": "MonsciergeAPI.Models.Product.ProductBaseModel"
                 }
             },
             "product_name": {
@@ -13420,7 +13420,7 @@ var models = [{
             "products": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Product.ProductModel"
+                    "$ref": "MonsciergeAPI.Models.Product.ProductModel"
                 }
             },
             "name": {
@@ -13534,7 +13534,7 @@ var models = [{
             "event_locations": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.MeetingsAndEvents.Models.EventLocationModel"
+                    "$ref": "MonsciergeIDK.MeetingsAndEvents.Models.EventLocationModel"
                 }
             }
         }
@@ -13572,7 +13572,7 @@ var models = [{
             "images": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ImageModel"
+                    "$ref": "MonsciergeIDK.Models.ImageModel"
                 }
             }
         }
@@ -13631,11 +13631,11 @@ var models = [{
             "time_zones": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.TimeZone.TimeZoneResourceModel"
+                    "$ref": "MonsciergeAPI.Models.TimeZone.TimeZoneResourceModel"
                 }
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.LinkModel"
+                "$ref": "MonsciergeAPI.Models.LinkModel"
             }
         }
     },
@@ -13668,7 +13668,7 @@ var models = [{
                 "type": "boolean"
             },
             "links": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.LinkModel"
+                "$ref": "MonsciergeAPI.Models.LinkModel"
             }
         }
     },
@@ -13730,10 +13730,10 @@ var models = [{
         "type": "object",
         "properties": {
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceBaseModel"
+                "$ref": "MonsciergeAPI.Models.Place.PlaceBaseModel"
             },
             "user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "alias_first_name": {
                 "type": "string"
@@ -13776,10 +13776,10 @@ var models = [{
         "type": "object",
         "properties": {
             "menu_item": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Menu.Item.MenuItemBaseModel"
+                "$ref": "MonsciergeAPI.Models.Menu.Item.MenuItemBaseModel"
             },
             "place": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Place.PlaceHackBaseModel"
+                "$ref": "MonsciergeAPI.Models.Place.PlaceHackBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -13804,7 +13804,7 @@ var models = [{
                 "type": "string"
             },
             "model": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.PersonalDevice.PersonalDeviceModelModel"
+                "$ref": "MonsciergeAPI.Models.PersonalDevice.PersonalDeviceModelModel"
             },
             "validated": {
                 "type": "boolean"
@@ -13829,7 +13829,7 @@ var models = [{
                 "type": "string"
             },
             "permissions": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.ReachRole.ReachRolePermissionsModel"
+                "$ref": "MonsciergeAPI.Models.ReachRole.ReachRolePermissionsModel"
             },
             "id": {
                 "format": "int32",
@@ -13940,7 +13940,7 @@ var models = [{
         "type": "object",
         "properties": {
             "request": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestModel"
+                "$ref": "MonsciergeAPI.Models.Request.RequestModel"
             },
             "last_known_request_action_id": {
                 "format": "int32",
@@ -13955,13 +13955,13 @@ var models = [{
             "actions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Action.RequestActionModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Action.RequestActionModel"
                 }
             },
             "values": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestOptionValueModel"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestOptionValueModel"
                 }
             },
             "created_ms": {
@@ -13977,7 +13977,7 @@ var models = [{
                 "type": "integer"
             },
             "group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "following": {
                 "description": "Whether or not the user is following the request. <code>True</code> for following, <code>false</code> if not.",
@@ -13990,7 +13990,7 @@ var models = [{
                 "type": "integer"
             },
             "requester_user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserModel"
+                "$ref": "MonsciergeAPI.Models.User.UserModel"
             },
             "status": {
                 "description": "The status of the request.",
@@ -14005,7 +14005,7 @@ var models = [{
                 "type": "string"
             },
             "template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
             },
             "unread": {
                 "description": "Whether or not the request is unread. <code>True</code> for unread, <code>false</code> if not.",
@@ -14042,7 +14042,7 @@ var models = [{
         "type": "object",
         "properties": {
             "added_follower": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "created_ms": {
                 "format": "int64",
@@ -14057,7 +14057,7 @@ var models = [{
                 "type": "integer"
             },
             "group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "message": {
                 "description": "The message body for the action.",
@@ -14075,7 +14075,7 @@ var models = [{
                 "type": "integer"
             },
             "old_group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "old_relation": {
                 "enum": [
@@ -14113,7 +14113,7 @@ var models = [{
                 "type": "boolean"
             },
             "removed_follower": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "request_id": {
                 "format": "int32",
@@ -14133,7 +14133,7 @@ var models = [{
                 "type": "string"
             },
             "user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserBaseModel"
+                "$ref": "MonsciergeAPI.Models.User.UserBaseModel"
             },
             "id": {
                 "format": "int32",
@@ -14154,7 +14154,7 @@ var models = [{
             "actions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.Action.RequestActionModel"
+                    "$ref": "MonsciergeAPI.Models.Request.Action.RequestActionModel"
                 }
             },
             "additional_info": {
@@ -14174,7 +14174,7 @@ var models = [{
             "options": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestOptionValueModel"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestOptionValueModel"
                 }
             },
             "request_status": {
@@ -14203,7 +14203,7 @@ var models = [{
             "values": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Request.RequestOptionValueModel"
+                    "$ref": "MonsciergeAPI.Models.Request.RequestOptionValueModel"
                 }
             },
             "created_ms": {
@@ -14219,7 +14219,7 @@ var models = [{
                 "type": "integer"
             },
             "group": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Group.RequestGroupBaseModel"
             },
             "following": {
                 "description": "Whether or not the user is following the request. <code>True</code> for following, <code>false</code> if not.",
@@ -14232,7 +14232,7 @@ var models = [{
                 "type": "integer"
             },
             "requester_user": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.User.UserModel"
+                "$ref": "MonsciergeAPI.Models.User.UserModel"
             },
             "status": {
                 "description": "The status of the request.",
@@ -14247,7 +14247,7 @@ var models = [{
                 "type": "string"
             },
             "template": {
-                "$ref": "#/definitions/MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
+                "$ref": "MonsciergeAPI.Models.Request.Template.RequestTemplateBaseModel"
             },
             "unread": {
                 "description": "Whether or not the request is unread. <code>True</code> for unread, <code>false</code> if not.",
@@ -14335,7 +14335,7 @@ var models = [{
             "validations": {
                 "type": "object",
                 "additionalProperties": {
-                    "$ref": "#/definitions/MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
+                    "$ref": "MonsciergeIDK.Integrations.Base.Models.Common.AdditionalInfoModel"
                 }
             }
         }
@@ -14353,7 +14353,7 @@ var models = [{
             "children": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.ReachGroup.ReachGroupModel"
+                    "$ref": "MonsciergeIDK.Models.ReachGroup.ReachGroupModel"
                 }
             },
             "id": {
@@ -14418,7 +14418,7 @@ var models = [{
             "reach_group_role": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.Models.User.ReachGroupAndRoleModel"
+                    "$ref": "MonsciergeIDK.Models.User.ReachGroupAndRoleModel"
                 }
             },
             "device_ids": {
@@ -14464,7 +14464,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "category_id": {
@@ -14489,7 +14489,7 @@ var models = [{
                 "type": "integer"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "hotel_id": {
                 "format": "int32",
@@ -14508,7 +14508,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -14538,7 +14538,7 @@ var models = [{
                 "type": "boolean"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "template_type": {
                 "enum": [
@@ -14574,7 +14574,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -14649,7 +14649,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -14688,7 +14688,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "option_id": {
@@ -14728,7 +14728,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "default": {
@@ -14795,7 +14795,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "template_id": {
@@ -14839,7 +14839,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -14955,7 +14955,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "group_id": {
@@ -14977,12 +14977,12 @@ var models = [{
                 "type": "integer"
             },
             "category": {
-                "$ref": "#/definitions/MonsciergeIDK.RequestTemplates.Models.RequestCategoryModel"
+                "$ref": "MonsciergeIDK.RequestTemplates.Models.RequestCategoryModel"
             },
             "sms_numbers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.SmsNumbers.Models.SmsNumberModel"
+                    "$ref": "MonsciergeIDK.SmsNumbers.Models.SmsNumberModel"
                 }
             },
             "url": {
@@ -15028,7 +15028,7 @@ var models = [{
                 "type": "boolean"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "template_type": {
                 "enum": [
@@ -15071,7 +15071,7 @@ var models = [{
                 "type": "integer"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "hotel_id": {
                 "format": "int32",
@@ -15120,12 +15120,12 @@ var models = [{
                 "type": "integer"
             },
             "category": {
-                "$ref": "#/definitions/MonsciergeIDK.RequestTemplates.Models.RequestCategoryModel"
+                "$ref": "MonsciergeIDK.RequestTemplates.Models.RequestCategoryModel"
             },
             "sms_numbers": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeIDK.SmsNumbers.Models.SmsNumberModel"
+                    "$ref": "MonsciergeIDK.SmsNumbers.Models.SmsNumberModel"
                 }
             },
             "url": {
@@ -15171,7 +15171,7 @@ var models = [{
                 "type": "boolean"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "template_type": {
                 "enum": [
@@ -15212,7 +15212,7 @@ var models = [{
             "urls": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/MonsciergeAPI.Models.Base.BaseUriModel"
+                    "$ref": "MonsciergeAPI.Models.Base.BaseUriModel"
                 }
             },
             "id": {
@@ -15242,7 +15242,7 @@ var models = [{
                 "type": "boolean"
             },
             "image": {
-                "$ref": "#/definitions/MonsciergeIDK.Models.ImageListModel"
+                "$ref": "MonsciergeIDK.Models.ImageListModel"
             },
             "template_type": {
                 "enum": [
@@ -15260,6 +15260,6 @@ var models = [{
             }
         }
     }
-}];
+};
 
 exports.models = models;
