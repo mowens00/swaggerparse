@@ -16,21 +16,18 @@ var testEndpoint = {};
 _.forEach(swagger.paths, function(obj, key) {
 	if (key == '/v1/Places/{placeId}/Info') {
 		_.forEach(obj, function(o, method) {
-			if (method == 'put') {
-				o.parameters = parseParams(o.parameters);
-				console.log(o.parameters);
+			if (method == 'get') {
 				var result = {
 					path : 'v1/Places/{placeId}/Info',
-					method: 'PUT',
-					params: o.parameters
+					method: 'GET',
+					params: parseParams(o.parameters),
+					response: parseResponse(o.responses)
 				};
 				results.push(result);
 			}
 		});
 	}
 });
-
-
 
 function parseParams(params) {
 	q = [];
@@ -54,9 +51,22 @@ function parseParams(params) {
 	return q;
 }
 
-// function parseResponse(resp) {
-
-// }
+function parseResponse(resp) {
+	q = [];
+	_.forEach(resp, function(r) {
+		if (r.schema) {
+			var response = {
+				description : r.description,
+				schema: parseObject(r.schema.$ref)
+			}
+			q.push(response);
+		}
+		else {
+			q.push(r);
+		}
+	});
+	return q;
+}
 
 function parseObject(obj) {
 	var r = {};
@@ -78,7 +88,6 @@ function parseObject(obj) {
 		return r;
 	}
 }
-
 
 // _.forEach(swagger.paths, function(obj, key) {
 // 	_.forEach(mobileEndpoints, function(me) {
